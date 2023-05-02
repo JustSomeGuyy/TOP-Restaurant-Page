@@ -1,0 +1,23 @@
+{
+  "name": "top-restaurant-page",
+  "version": "1.0.0",
+  "description": "This is a project for The Odin Project that focuses on using Webpack, bundling, and import/exporting to create a functioning website. As well as using JavaScript DOM manipulation to create the pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustSomeGuyy/TOP-Restaurant-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustSomeGuyy/TOP-Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/JustSomeGuyy/TOP-Restaurant-Page#readme",
+  "devDependencies": {
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  }
+}
