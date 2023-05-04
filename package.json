@@ -2,9 +2,10 @@
   "name": "top-restaurant-page",
   "version": "1.0.0",
   "description": "This is a project for The Odin Project that focuses on using Webpack, bundling, and import/exporting to create a functioning website. As well as using JavaScript DOM manipulation to create the pages.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "devDependencies": {
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2"
+  },
+  "dependencies": {
+    "socket.io": "^4.6.1"
   }
 }
