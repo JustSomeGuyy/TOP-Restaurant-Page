@@ -23,15 +23,24 @@ export default createHeader;
 content.appendChild(createHeader());
 
 function createMain() {
+
+    // Creates hero in the body of the page
     const mainElement = document.createElement('div');
     const heroElement = document.createElement('div');
     const heroHead = document.createElement('h2');
     const heroPara = document.createElement('p');
+    const heroImage = document.createElement('img');
+
+
 
     mainElement.classList.add('main');
     heroElement.classList.add('hero');
     heroHead.classList.add('hero-header');
     heroPara.classList.add('hero-para');
+
+    // Content for the hero div block on the site
+    heroHead.innerText = 'Hello';
+    heroPara.innerText = 'Hi world!'
 
     // create the cards for the experiences for the cafe
     const cardMenu = document.createElement('div')
@@ -40,22 +49,62 @@ function createMain() {
     let cardHead;
     let cardPara;
 
-    for(let i = 0; i < 3; i++){
+
+    // Creates the content for the cards
+    const cardContext = [
+        {title: '', para: ''},
+        {title: '', para: ''},
+        {title: '', para: ''},
+    ]
+
+    // Creates 3 cards
+    for(let i = 0; i < cardContext.length; i++){
         card = document.createElement('div');
+        cardHead = document.createElement('h3');
+        cardPara = document.createElement('p');
+
         card.classList.add('card');
 
-        for(let j = 0; j < 2; j++){
-            cardHead = document.createElement('h3');
-            cardPara = document.createElement('p');
+        cardHead.innerText = cardContext[i].title;
+        cardPara.innerText = cardContext[i].para;
 
-            
-        }
+        cardMenu.appendChild(card);
+        card.appendChild(cardHead);
+        card.appendChild(cardPara);
     }
 
+    // Appending elements to the main part of the site
+    mainElement.appendChild(heroElement);
+    heroElement.appendChild(heroHead);
+    heroElement.appendChild(heroPara);
+    heroElement.appendChild(heroImage);
 
-
-
-
+    mainElement.appendChild(cardMenu);
 
     return mainElement;
 }
+
+content.appendChild(createMain());
+
+function createFooter() {
+    const footerEle = document.createElement('div');
+    const footerCopyRight = document.createElement('p');
+    const gitHubAccount = document.createElement('a');
+    const gitHubLogo = document.createElement('img');
+
+    footerEle.classList.add('footer');
+
+    footerCopyRight.innerText = 'Copyright by Tyler Wolfe 2023';
+
+    footerEle.appendChild(footerCopyRight);
+    footerEle.appendChild(gitHubAccount);
+    gitHubAccount.appendChild(gitHubLogo);
+
+    // const gitHub = [
+    //     {src: './images/'}
+    // ]
+
+    return footerEle;
+};
+
+content.appendChild(createFooter());
