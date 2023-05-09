@@ -31,7 +31,7 @@ function createMain() {
     const heroPara = document.createElement('p');
     const heroImage = document.createElement('img');
 
-
+    heroImage.src = "/images/pexels-liana-tril'-11719833.jpg";
 
     mainElement.classList.add('main');
     heroElement.classList.add('hero');
@@ -40,7 +40,7 @@ function createMain() {
 
     // Content for the hero div block on the site
     heroHead.innerText = 'Hello';
-    heroPara.innerText = 'Hi world!'
+    heroPara.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula ipsum massa, id convallis turpis pulvinar at. Sed sollicitudin porttitor enim, vel sollicitudin neque pellentesque sed. Fusce non sem luctus lacus tincidunt sodales. Mauris orci erat, condimentum eget mauris sed, faucibus sodales lorem. Nunc quis pellentesque leo, vitae feugiat velit. Phasellus ac dictum justo. Cras fermentum mi velit, eget commodo ligula vestibulum pulvinar. Pellentesque blandit mollis commodo. Maecenas mattis leo nec dolor faucibus fermentum eu eget dolor.";
 
     // create the cards for the experiences for the cafe
     const cardMenu = document.createElement('div')
@@ -52,9 +52,9 @@ function createMain() {
 
     // Creates the content for the cards
     const cardContext = [
-        {title: '', para: ''},
-        {title: '', para: ''},
-        {title: '', para: ''},
+        {title: 'Words', para: 'WORDS WORDS WORDS WORDS WORDS WORDS WORDS'},
+        {title: 'Words', para: 'WORDS WORDS WORDS WORDS WORDS WORDS WORDS'},
+        {title: 'Words', para: 'WORDS WORDS WORDS WORDS WORDS WORDS WORDS'},
     ]
 
     // Creates 3 cards
@@ -90,7 +90,11 @@ function createFooter() {
     const footerEle = document.createElement('div');
     const footerCopyRight = document.createElement('p');
     const gitHubAccount = document.createElement('a');
-    const gitHubLogo = document.createElement('img');
+    const gitHubLogo = new Image;
+
+    gitHubLogo.src = '/images/github-mark.png';
+
+    gitHubAccount.href = 'https://github.com/JustSomeGuyy';
 
     footerEle.classList.add('footer');
 
@@ -100,11 +104,9 @@ function createFooter() {
     footerEle.appendChild(gitHubAccount);
     gitHubAccount.appendChild(gitHubLogo);
 
-    // const gitHub = [
-    //     {src: './images/'}
-    // ]
-
     return footerEle;
 };
 
 content.appendChild(createFooter());
+
+// export default createFooter;
