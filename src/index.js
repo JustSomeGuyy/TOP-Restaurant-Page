@@ -39,8 +39,8 @@ function createMain() {
     heroPara.classList.add('hero-para');
 
     // Content for the hero div block on the site
-    heroHead.innerText = 'Hello';
-    heroPara.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula ipsum massa, id convallis turpis pulvinar at. Sed sollicitudin porttitor enim, vel sollicitudin neque pellentesque sed. Fusce non sem luctus lacus tincidunt sodales. Mauris orci erat, condimentum eget mauris sed, faucibus sodales lorem. Nunc quis pellentesque leo, vitae feugiat velit. Phasellus ac dictum justo. Cras fermentum mi velit, eget commodo ligula vestibulum pulvinar. Pellentesque blandit mollis commodo. Maecenas mattis leo nec dolor faucibus fermentum eu eget dolor.";
+    heroHead.innerText = 'Great coffee, even greater friends!';
+    heroPara.innerText = "Visit Toe Beans Cafe for a cozy and delightful experience, where you can enjoy delicious drinks and snacks while cuddling with adoptable cats, all while supporting animal welfare and potentially finding your new best friend.";
 
     // create the cards for the experiences for the cafe
     const cardMenu = document.createElement('div')
@@ -52,9 +52,9 @@ function createMain() {
 
     // Creates the content for the cards
     const cardContext = [
-        {title: 'Words', para: 'WORDS WORDS WORDS WORDS WORDS WORDS WORDS'},
-        {title: 'Words', para: 'WORDS WORDS WORDS WORDS WORDS WORDS WORDS'},
-        {title: 'Words', para: 'WORDS WORDS WORDS WORDS WORDS WORDS WORDS'},
+        {title: 'Comfy Atmosphere!', para: 'Looking for a cozy spot to sip your coffee and cuddle with a furry feline? Look no further than Toe Beans Cafe, where you can enjoy the purrfect combination of caffeine and cat love!'},
+        {title: 'Delicious and locally sourced!', para: 'Toe Beans Cafe offers a unique opportunity to meet and mingle with adorable adoptable cats while enjoying delicious snacks and beverages. Who knows, you might just find your new best friend!'},
+        {title: 'Fall in love today!', para: "By visiting Toe Beans Cafe, you're not only treating yourself to a delightful experience, but also helping cats in need find their forever homes. Come for the coffee, stay for the kitties - you won't regret it!"},
     ]
 
     // Creates 3 cards

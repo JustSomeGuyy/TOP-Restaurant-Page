@@ -1,0 +1,152 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #FFFFEA;
+    color: #4e4d5c;
+    font-family: 'Raleway', sans-serif;
+}
+
+a, li {
+    text-decoration: none;
+    color: inherit;
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #bc9ec1;
+    width: 95dvw;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    margin: 15px 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    width: 30dvw;
+}
+
+.nav-links {
+    border-bottom: 1px solid #bc9ec1;
+    height: 1.3rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links:hover,:focus {
+    transform: scale(1.05);
+    border: 1px solid #bc9ec16c;
+    border-radius: 7px;
+}
+
+.main {
+    width: 95dvw;
+    margin: 0 auto;
+}
+
+.hero {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header header picture"
+    "para para picture";
+}
+
+.hero h2 {
+    grid-area: header;
+    font-size: 2rem;
+    place-self: start;
+    align-self: last baseline;
+    margin: 0 3rem;
+    width: 32rem;
+    height: 2.5rem;
+    border-bottom: 1px solid #bc9ec1;
+}
+
+.hero p {
+    grid-area: para;
+    padding: 0 15rem 0 3rem;
+}
+
+.hero img {
+    grid-area: picture;
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 10px;
+    outline: solid;
+    filter: grayscale(35%);
+}
+
+.card-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 20dvw;
+    min-width: 200px;
+    height: 24dvh;
+    padding: 2em 3em;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(107, 107, 107, 0.33);
+}
+
+.card:first-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.650)), url(../images/pexels-lina-kivaka-1813466.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.card:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.650)), url(../images/pexels-chevanon-photography-302896.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card:last-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../images/pexels-marcus-pinho-923360.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.footer {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.footer img {
+    height: 1.2rem;
+    margin: 0 5px;
+}
